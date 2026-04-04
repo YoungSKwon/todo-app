@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TODO</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <h1>TODO</h1>
+      <button class="theme-toggle" id="themeToggle" aria-label="&#xD14C;&#xB9C8; &#xC804;&#xD658;">&#x1F319;</button>
+    </header>
+
+    <form class="input-form" id="inputForm">
+      <input
+        type="text"
+        class="input-field"
+        id="inputField"
+        placeholder="&#xD560; &#xC77C;&#xC744; &#xC785;&#xB825;&#xD558;&#xC138;&#xC694;..."
+        autocomplete="off"
+        maxlength="200"
+      />
+      <button type="submit" class="add-btn">&#xCD94;&#xAC00;</button>
+    </form>
+
+    <nav class="filters">
+      <button class="filter-btn active" data-filter="all">&#xC804;&#xCCB4;</button>
+      <button class="filter-btn" data-filter="active">&#xC9C4;&#xD589;&#xC911;</button>
+      <button class="filter-btn" data-filter="completed">&#xC644;&#xB8CC;</button>
+    </nav>
+
+    <ul class="todo-list" id="todoList"></ul>
+
+    <footer class="footer" id="footer">
+      <span class="count" id="count"></span>
+      <button class="clear-btn" id="clearBtn">&#xC644;&#xB8CC; &#xD56D;&#xBAA9; &#xC0AD;&#xC81C;</button>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
